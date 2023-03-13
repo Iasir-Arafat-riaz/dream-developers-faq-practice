@@ -217,10 +217,9 @@
     color: rgb(160, 157, 157);
 }
 .residential-category-image {
-    background-image: url("images/residential.png");
+    background: url("images/residential.png") no-repeat;
     width: 30px;
     height: 30px;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: 2px 0;
     margin-right: 15px;
@@ -232,10 +231,9 @@
     float: left;
 }
 .commercial-category-image {
-    background-image: url("images/commercial.png");
+    background: url("images/commercial.png") no-repeat;
     width: 35px;
     height: 28px;
-    background-repeat: no-repeat;
     background-size: cover;
     background-position: -38px 0;
     margin-right: 15px;
@@ -271,11 +269,9 @@
     min-width: 100%;
     min-height: 400px;
 }
-.building-card-inner-div {
-    padding: 0 3px;
-}
 .building-card-content {
     position: relative;
+    padding: 0 3px;
 }
 .card-title-name {
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -286,10 +282,13 @@
     color: rgb(160, 157, 157);
     font-weight: 400;
 }
+.address2{
+    display: block;
+}
 .building-card-title {
     position: absolute;
     text-align: center;
-    background-color: #ffffffe1;
+    background-color: #ffffff;
     top: 0;
     width: 100%;
     min-height: 65px;
@@ -305,32 +304,31 @@
     top: 85px;
     left: 38px
 }
-.hover-image {
-    background-color: #4ad3d5e1;
-    position: absolute;
-    top: 0;
-    padding: 156px 122px;
-}
 .hover-image a{
     text-decoration: none;
     display: block;
 }
-.building-card-hover-content img {
-    text-align: center;
-    background-color: rgba(255, 255, 255, 0.596);
-    width: 71px;
-    height: 68px;
-    padding: 10px;
-    border-radius: 48px;
+.building-card-hover-content{
+    display: none;
+    position: absolute;
+    top: 0;
+    background-color: #4ad3d5f1;
+    padding: 145px 109px;
 }
-.hover-image h3{
+.image-wrapper{
+    padding: 20px;
+    background-color: rgba(255, 255, 255, 0.596);
+    border-radius: 57px;
+}
+.image-wrapper img{
+    width: 75px;
+    height: 68px;
+}
+.building-card-hover-content h3{
     text-align: center;
     text-transform: uppercase;
     color: rgba(255, 255, 255, 0.596);
     margin-top: 8px;
-}
-.building-card-hover-content{
-    display: none;
 }
 .building-card-content:hover .building-card-title,
 .building-card-content:hover .triangle-down{
